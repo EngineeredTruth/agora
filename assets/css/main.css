@@ -2804,10 +2804,11 @@
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: fixed;
-		top: 0;
+		position: fixed !important;
+		top: 0 !important;
 		width: 100%;
 		z-index: 10000;
+		transition-duration: 1s;
 	}
 
 		#header h1 {
@@ -3356,6 +3357,7 @@
 
 			#header {
 				display: none;
+
 			}
 
 		/* Banner */
