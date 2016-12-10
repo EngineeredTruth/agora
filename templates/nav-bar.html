@@ -1,4 +1,4 @@
-<header id="header" class="alt">
+<header id="header" class="alt" ng-class='{black:black}'>
   <div>
     <h1 style='margin: 1px 0 0 0;'><img style='vertical-align: middle; display: inline-block; width: 100px;' src='./img/logo.png' /> &nbsp; &nbsp; Contact: &nbsp; (808) 224-0663</h1>
   </div>
@@ -6,15 +6,30 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="https://www.certifiedps.com/hawaii-property-management-services/">Property Management</a></li>
-      <li><a href="#" class="icon fa-angle-down">About</a>
-        <ul>
-          <li><a href="generic.html">Contact Agora Hawaii</a></li>
-          <li><a href="contact.html">Paul Sebastian</a></li>
+      <li uib-dropdown dropdown-append-to-body ><a class="icon fa-angle-down" uib-dropdown-toggle>About</a>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+          <li role="menuitem"><a href="contact.html">Contact Agora Hawaii</a></li>
+          <li class="divider"></li>
+          <li role="menuitem"><a href="paul.html">Paul Sebastian</a></li>
         </ul>
 
       </li>
       <li><a href="index.html">Resources</a></li>
       <li><a href="#" class="button">Search Listings</a></li>
     </ul>
+
+    <!-- <div uib-dropdown dropdown-append-to-body>
+  <button id="btn-append-to-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+    Dropdown on Body <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+    <li role="menuitem"><a href="#">Action</a></li>
+    <li role="menuitem"><a href="#">Another action</a></li>
+    <li role="menuitem"><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li role="menuitem"><a href="#">Separated link</a></li>
+  </ul>
+</div> -->
+
   </nav>
 </header>

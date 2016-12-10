@@ -1,4 +1,4 @@
-var app = angular.module('app',['ui.router'])
+var app = angular.module('app',['ui.router','ui.bootstrap'])
   .config(function($stateProvider, $urlRouterProvider){
     $stateProvider
       .state('home', {
@@ -9,7 +9,11 @@ var app = angular.module('app',['ui.router'])
     $stateProvider
       .state('buyers', {
         url:'/buyers',
-        templateUrl:'./views/buyer.html',
+        templateUrl:'./views/buyers.html',
+      })
+      .state('sellers', {
+        url: '/sellers',
+        templateUrl:'./views/sellers.html',
       })
 
       $urlRouterProvider.otherwise('/');

@@ -9,6 +9,31 @@
 
 /* Reset */
 
+.black {
+	background: #363636 !important;
+}
+
+.dropdown-menu > li:hover {
+	background: #FFED61
+}
+
+i
+{
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+}
+
+.disappear {
+	height: 300px;
+}
+
+@media only screen and (max-width: 840px) {
+    .disappear {
+        height: 0px;
+    }
+}
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -2305,6 +2330,7 @@
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		/*padding-left: 25px;*/
 	}
 
 		.icon:before {
@@ -2631,6 +2657,7 @@
 		input[type="button"]:hover,
 		.button:hover {
 			background-color: #737373;
+			text-decoration: none;
 		}
 
 		input[type="submit"]:active,
@@ -2715,15 +2742,17 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #e89980;
-			color: #ffffff !important;
+			background-color: #FFED61;
+			color: #444444 !important;
+			transition: 1s;
 		}
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #ecaa96;
+				background-color: #ffe100;
+				text-decoration: none;
 			}
 
 			input[type="submit"].special:active,

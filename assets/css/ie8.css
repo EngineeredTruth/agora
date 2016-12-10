@@ -44,6 +44,10 @@
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
+	.button:hover {
+		text-decoration: none;
+	}
+
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
