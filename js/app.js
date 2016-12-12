@@ -1,11 +1,5 @@
-var app = angular.module('app',['ui.router','ui.bootstrap'])
+var app = angular.module('app',['ui.router','ui.bootstrap',"pageslide-directive"])
   .config(function($stateProvider, $urlRouterProvider){
-    $stateProvider
-      .state('home', {
-        url:'/',
-        templateUrl:'./views/home.html',
-      })
-
     $stateProvider
       .state('buyers', {
         url:'/buyers',
@@ -14,6 +8,14 @@ var app = angular.module('app',['ui.router','ui.bootstrap'])
       .state('sellers', {
         url: '/sellers',
         templateUrl:'./views/sellers.html',
+      })
+      .state('home', {
+        url:'/',
+        templateUrl:'./views/home.html',
+      })
+      .state('contact', {
+        url:'/contact',
+        templateUrl:'./views/contact.html'
       })
 
       $urlRouterProvider.otherwise('/');

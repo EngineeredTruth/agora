@@ -10,14 +10,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
 </head>
 
-<body class="landing">
-	<div id="page-wrapper">
-		<ui-view></ui-view>
+<body ng-controller='MainCtrl' class="landing">
 
-		<!-- CTA -->
+	<div id="page-wrapper">
+
+<nav-bar></nav-bar>
+		<!-- <header id="header" class="alt black">
+		  <div>
+		    <h1 style='margin: 1px 0 0 0;'><img style='vertical-align: middle; display: inline-block; width: 100px;' src='./img/logo.png' /> &nbsp; &nbsp; Contact: &nbsp; (808) 224-0663</h1>
+		  </div>
+		  <nav id="nav">
+		    <ul>
+		      <li><a ui-sref='home'>Home</a></li>
+		      <li><a href="https://www.certifiedps.com/hawaii-property-management-services/">Property Management</a></li>
+		      <li uib-dropdown dropdown-append-to-body ><a class="icon fa-angle-down" uib-dropdown-toggle>About</a>
+		        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+		          <li role="menuitem"><a ui-sref='contact'>Contact Agora Hawaii</a></li>
+		          <li class="divider"></li>
+		          <li role="menuitem"><a href="paul.html">Paul Sebastian</a></li>
+		        </ul>
+
+		      </li>
+		      <li><a href="index.html">Resources</a></li>
+		      <li><a href="#" class="button">Search Listings</a></li>
+		    </ul>
+		  </nav>
+		</header> -->
+
+		<ui-view></ui-view>
 
 		<section id="cta" style='display: flex; flex-direction: row; justify-content: space-around;'>
 			<div>
@@ -44,8 +66,6 @@
 				<p>
 					<span style='font-weight: 500'>Office License Number:</span>&nbsp; RB 21552
 				</p>
-
-
 			</div>
 		</section>
 
@@ -79,9 +99,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-touch.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.js"></script>
+	<script src='node_modules/angular-pageslide-directive/dist/angular-pageslide-directive.js'></script>
 	<script src="js/app.js"></script>
 	<script src="js/directive.js"></script>
 	<script src="js/NavCtrl.js"></script>
+	<script src="js/MainCtrl.js"></script>
 
 </body>
 

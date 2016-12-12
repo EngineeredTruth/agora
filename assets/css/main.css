@@ -9,6 +9,36 @@
 
 /* Reset */
 
+#slide-menu {
+	background: #363636;
+}
+
+#slide-nav {
+	margin: 55px 0 0 0;
+}
+
+.slide-list {
+	list-style: none;
+	line-height: 50px;
+	padding: 0;
+}
+
+.slide-list a {
+	color: white;
+	text-decoration: none;
+	border-bottom: none;
+	margin: 25px;
+}
+
+.slide-list li {
+	border-bottom: 0.2px rgb(65, 63, 63) solid;
+}
+
+.test {
+	margin: 60px 0 0 0;
+	color: white;
+}
+
 .black {
 	background: #363636 !important;
 }
@@ -2060,8 +2090,8 @@ i
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e89980;
-			box-shadow: 0 0 0 2px #e89980;
+			border-color: #FFED61;
+			box-shadow: 0 0 0 2px #FFED61;
 		}
 
 	.select-wrapper {
