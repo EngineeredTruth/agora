@@ -43,7 +43,7 @@
 			// Navigation Button.
 				$(
 					'<div id="navButton" ng-click="toggle()">' +
-						'<a href="#navPanel" class="toggle"></a>' +
+						'<a class="toggle"></a>' +
 					'</div>'
 				)
 					.appendTo($body);
