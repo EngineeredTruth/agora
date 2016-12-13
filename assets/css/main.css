@@ -30,6 +30,25 @@
 	margin: 25px;
 }
 
+.showmenu {
+ position: absolute;
+left:-300px;
+width:300px;
+display:block;
+opacity:0.5;
+transition: all 0.5s;
+color: white;
+}
+
+.hidemenu {
+ position: absolute;
+ left:0px;
+width:300px;
+opacity:0.95;
+ transition: all 0.5s;
+ color: white;
+ }
+
 .slide-list li {
 	border-bottom: 0.2px rgb(65, 63, 63) solid;
 }
