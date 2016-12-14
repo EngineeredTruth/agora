@@ -17,6 +17,10 @@ var app = angular.module('app',['ui.router','ui.bootstrap',"pageslide-directive"
         url:'/contact',
         templateUrl:'./views/contact.html'
       })
+      .state('paul', {
+        url:'/paul',
+        templateUrl: './views/paul.html'
+      })
 
       $urlRouterProvider.otherwise('/');
 })

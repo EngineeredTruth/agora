@@ -8,6 +8,16 @@
 */
 
 /* Reset */
+.paul-container {
+	display: flex;
+	justify-content: center;
+}
+
+.paul-info {
+	list-style: none;
+	font-size: 20px;
+	line-height: 50px;
+}
 
 #slide-menu {
 	background: #363636;
