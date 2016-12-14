@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+
+<html ng-app='app'>
+
+<head>
+	<title>Your Resource For Hawaii Real Estate</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://use.fontawesome.com/0b390f9c77.js"></script>
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="landing">
+
+<slider-menu></slider-menu>
+	<div id="page-wrapper">
+
+		<!-- <header id="header" class="alt black">
+		  <div>
+		    <h1 style='margin: 1px 0 0 0;'><img style='vertical-align: middle; display: inline-block; width: 100px;' src='./img/logo.png' /> &nbsp; &nbsp; Contact: &nbsp; (808) 224-0663</h1>
+		  </div>
+		  <nav id="nav">
+		    <ul>
+		      <li><a ui-sref='home'>Home</a></li>
+		      <li><a href="https://www.certifiedps.com/hawaii-property-management-services/">Property Management</a></li>
+		      <li uib-dropdown dropdown-append-to-body ><a class="icon fa-angle-down" uib-dropdown-toggle>About</a>
+		        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+		          <li role="menuitem"><a ui-sref='contact'>Contact Agora Hawaii</a></li>
+		          <li class="divider"></li>
+		          <li role="menuitem"><a href="paul.html">Paul Sebastian</a></li>
+		        </ul>
+
+		      </li>
+		      <li><a href="index.html">Resources</a></li>
+		      <li><a href="#" class="button">Search Listings</a></li>
+		    </ul>
+		  </nav>
+		</header> -->
+
+		<ui-view></ui-view>
+
+		<section id="cta" style='display: flex; flex-direction: row; justify-content: space-around;'>
+			<div>
+				<h2>Contact our team</h2>
+
+				<form action="https://formspree.io/your@email.com" method="POST">
+					Name: <input type="text" name="name"> Email: <input type="email" name="_replyto"> Message: <input type="text" name="message">
+					<input style='margin: 15px 0 0 0; color: black;' type="submit" value="Send">
+				</form>
+			</div>
+			<div>
+				<p style='font-weight: 600'>LOCATION & CONTACT INFO</p>
+				<p>
+					<span style='font-weight: 500'>Mailing Address:</span>&nbsp; Agora Hawaii 1253 S Beretania St #2400 Honolulu, HI 96814
+				</p>
+				<p>
+				<span style='font-weight: 500'>Phone:</span>&nbsp; (808) 799-2834
+				</p>
+				<p>
+				<span style='font-weight: 500'>Email:</span>&nbsp; pauls@agorahawaii.com
+				</p>
+				<p>
+				<span style='font-weight: 500'>Office Hours:</span>&nbsp; Monday through Sunday 9AM to 6P	</p>
+				<p>
+					<span style='font-weight: 500'>Office License Number:</span>&nbsp; RB 21552
+				</p>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="http://www.linkedin.com/in/paulshawaii" class="icon fa-linkedin"><span class="label">LinkedIN</span></a></li>
+				<li><a href="http://www.facebook.com/100007421564982" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="mailto:pauls@vestahawaii.com" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="http://google.com/+Agorahawaiirealestate808" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+				<li><a href="http://www.yelp.com/biz/agora-hawaii-honolulu" class="icon fa-yelp"><span class="label">Yelp</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 2013 - 2017 Agora Hawaii Real Estate. All rights reserved.</li>
+			</ul>
+		</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<!-- <script src="assets/js/jquery.scrollgress.min.js"></script> -->
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-touch.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.js"></script>
+	<script src='angular-pageslide-directive.min.js'></script>
+	<script src="js/app.js"></script>
+	<script src="js/directive.js"></script>
+	<script src="js/NavCtrl.js"></script>
+	<script src="js/MainCtrl.js"></script>
+
+</body>
+
+</html>
