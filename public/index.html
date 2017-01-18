@@ -43,33 +43,28 @@
 
 		<ui-view></ui-view>
 
-		<section id="cta" style='display: flex; flex-direction: row; justify-content: space-around;'>
-			<div>
-				<h2>Contact our team</h2>
-
-				<form action="https://formspree.io/your@email.com" method="POST">
-					Name: <input type="text" name="name"> Email: <input type="email" name="_replyto"> Message: <input type="text" name="message">
-					<input style='margin: 15px 0 0 0; color: black;' type="submit" value="Send">
+		<section id="cta">
+			<div style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;'>
+				<h2 style='margin: 0 15px 0 30px;'>CONTACT</h2>
+				<form style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;' action="https://formspree.io/your@email.com" method="POST">
+					<input style='margin: 0 15px;' type="text" onfocus="if (this.value=='name') this.value = ''" type="text" value="name" name="name">
+					<input style='margin: 0 15px;' type="email" onfocus="if (this.value=='Email') this.value = ''" type="text" value="Email" name="_replyto">
+					<input style='margin: 0 15px;' type="text" onfocus="if (this.value=='Message') this.value = ''" value="Message" name="message">
+					<input style='margin: 0 30px 0 15px; color: black;' type="submit" value="Send">
 				</form>
 			</div>
-			<div style='font-size:16px;'>
-				<p style='font-weight: 600'>LOCATION & CONTACT INFO</p>
-				<p>
-					<span style='font-weight: 500'>Mailing Address:</span>&nbsp; Agora Hawaii 1253 S Beretania St #2400 Honolulu, HI 96814
-				</p>
-				<p>
-				<span style='font-weight: 500'>Phone:</span>&nbsp; (808) 799-2834
-				</p>
-				<p>
-				<span style='font-weight: 500'>Email:</span>&nbsp; pauls@agorahawaii.com
-				</p>
-				<p>
-				<span style='font-weight: 500'>Office Hours:</span>&nbsp; Monday through Sunday 9AM to 6P	</p>
-				<p>
-					<span style='font-weight: 500'>Office License Number:</span>&nbsp; RB 21552
-				</p>
-			</div>
+
 		</section>
+
+		<div style='margin: 30px 0 0; font-size:25px; text-align:center; line-height: 30px;'>
+			<p style='margin-bottom: 10px; padding-bottom: 0px; font-weight: 500'>LOCATION & CONTACT INFO</p>
+			<span style='font-size: 22px; font-weight: 600'>AGORA HAWAII, 1263 S. BERETANIA STREET, #2400 HONOLULU, HI 96814</span></br>
+			<span style='font-size: 30px; font-weight: 500'>pauls@agorahawaii.com</span></br>
+			<span style='font-size: 30px; font-weight: 500'>(808) 799-2834</span></br>
+
+			<span style='font-weight: 500'></span>&nbsp; Monday-Sunday 9AM-6PM </br>
+				<span style='font-weight: 500'></span>&nbsp; License # 21552  </br>
+		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
