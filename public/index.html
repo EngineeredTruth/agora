@@ -14,7 +14,7 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
-<body class="landing">
+<body ng-controller='MainCtrl' class="landing">
 
 <slider-menu></slider-menu>
 	<div id="page-wrapper">
@@ -43,7 +43,7 @@
 
 		<ui-view></ui-view>
 
-		<section id="cta">
+		<section  ng-if='toggle_contact' id="cta">
 			<div style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;'>
 				<h2 style='margin: 0 15px 0 30px;'>CONTACT</h2>
 				<form style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;' action="https://formspree.io/your@email.com" method="POST">
@@ -58,10 +58,9 @@
 
 		<div style='margin: 30px 0 0; font-size:25px; text-align:center; line-height: 30px;'>
 			<p style='margin-bottom: 10px; padding-bottom: 0px; font-weight: 500'>LOCATION & CONTACT INFO</p>
-			<span style='font-size: 22px; font-weight: 600'>AGORA HAWAII, 1263 S. BERETANIA STREET, #2400 HONOLULU, HI 96814</span></br>
-			<span style='font-size: 30px; font-weight: 500'>pauls@agorahawaii.com</span></br>
-			<span style='font-size: 30px; font-weight: 500'>(808) 799-2834</span></br>
-
+			<span style='font-size: 22px; font-weight: 500'>AGORA HAWAII, 1263 S. BERETANIA STREET, #2400 HONOLULU, HI 96814</span></br>
+			<span style='font-size: 28; font-weight: 500'>pauls@agorahawaii.com</span></br>
+			<span style='font-size: 28px; font-weight: 500'>(808) 799-2834</span></br>
 			<span style='font-weight: 500'></span>&nbsp; Monday-Sunday 9AM-6PM </br>
 				<span style='font-weight: 500'></span>&nbsp; License # 21552  </br>
 		</div>
