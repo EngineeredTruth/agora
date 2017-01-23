@@ -26,7 +26,6 @@ app.controller('MainCtrl', function($scope, $location){
       console.log($scope.toggle_contact)
     }
 
-
   });
 
 });

@@ -43,17 +43,16 @@
 
 		<ui-view></ui-view>
 
-		<section  ng-if='toggle_contact' id="cta">
-			<div style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;'>
+		<section ng-if='toggle_contact' id="cta">
+			<div class='contact_container'>
 				<h2 style='margin: 0 15px 0 30px;'>CONTACT</h2>
-				<form style='width: 100%; display: flex; flex-direction: row; justify-content: space-around;' action="https://formspree.io/your@email.com" method="POST">
+				<form class='form_container' action="https://formspree.io/your@email.com" method="POST">
 					<input style='margin: 0 15px;' type="text" onfocus="if (this.value=='name') this.value = ''" type="text" value="name" name="name">
 					<input style='margin: 0 15px;' type="email" onfocus="if (this.value=='Email') this.value = ''" type="text" value="Email" name="_replyto">
 					<input style='margin: 0 15px;' type="text" onfocus="if (this.value=='Message') this.value = ''" value="Message" name="message">
 					<input style='margin: 0 30px 0 15px; color: black;' type="submit" value="Send">
 				</form>
 			</div>
-
 		</section>
 
 		<div style='margin: 30px 0 0; font-size:25px; text-align:center; line-height: 30px;'>

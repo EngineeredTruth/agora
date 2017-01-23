@@ -8,15 +8,61 @@
 */
 
 /* Reset */
-.paul-container {
-	display: flex;
-	justify-content: center;
+
+.contact_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.paul-container {
+  width: 400px;
+	display: flex;
+	justify-content: space-between;
+  margin: auto;
+  margin-bottom: 30px;
+  /*border: 1px solid black;*/
+}
+
+	@media screen and (max-width: 480px) {
+		.paul-container {
+      width: 0;
+			display: flex;
+			flex-direction: column;;
+			justify-content: center;
+			align-items: center;
+		}
+
+    .contact_container {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form_container {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+	}
 
 .paul-info {
 	list-style: none;
 	font-size: 20px;
 	line-height: 50px;
+  padding: 0;
+}
+
+.paul-info li {
+  padding: 0;
 }
 
 #slide-menu {
