@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "babel": {
-  "presets": [
-    "babel-preset-es2015"
-  ]
-},
+    "presets": [
+      "babel-preset-es2015"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,7 @@
     "babel-register": "^6.18.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "prerender-node": "^2.7.0"
   }
 }
